@@ -278,6 +278,7 @@ button {
     padding: 25px 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .31);
     border-radius: 20px;
+    /* min-height: 200px; */
 }
 
 .availabilty-cards .card:hover {
@@ -334,7 +335,7 @@ section.package-cards {
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     z-index: 20;
-
+    object-fit: cover;
     box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);
 }
 

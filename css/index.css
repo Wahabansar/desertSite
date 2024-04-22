@@ -236,6 +236,14 @@ button {
     overflow: auto;
 }
 
+@media screen and (min-width:1024px) {
+    .hero-section .hero-cards {
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+    }
+}
+
 .hero-cards .card {
     width: 160px;
     min-height: 180px;
@@ -279,6 +287,13 @@ button {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .31);
     border-radius: 20px;
     /* min-height: 200px; */
+}
+
+@media screen and (min-width:990px) and (max-width:1200px) {
+    .availabilty-cards .card {
+        height: 180px !important;
+    }
+
 }
 
 .availabilty-cards .card:hover {
@@ -488,6 +503,18 @@ section.package-cards {
     bottom: 0;
     top: -69px;
 
+}
+
+
+@media screen and (max-width:1400px) {
+    .cta-banner .cta-box .cta-image-box {
+        width: 304px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        top: 0 !important;
+
+    }
 }
 
 @media screen and (max-width:769px) {

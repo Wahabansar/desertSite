@@ -48,3 +48,9 @@ setInterval(typePlaceholder, 300); // Typing effect repeats every half-second
 // });
 
 // Swiper Js end
+
+
+
+
+
+  

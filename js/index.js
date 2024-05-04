@@ -50,6 +50,43 @@ setInterval(typePlaceholder, 300); // Typing effect repeats every half-second
 // Swiper Js end
 
 
+// popup form start
+function openContactForm() {
+    // Show the popup contact form with smooth animation
+    document.getElementById("contactForm").style.display = "block";
+  }
+  
+  function closeContactForm() {
+    // Hide the popup contact form with smooth animation
+    document.getElementById("contactForm").style.display = "none";
+  }
+  
+  // Optional: Submit form data using AJAX
+  document.getElementById("contactFormContent").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Submit form data using AJAX or perform any other actions here
+    // Example AJAX submission:
+    // const formData = new FormData(this);
+    // fetch('your-server-endpoint', {
+    //   method: 'POST',
+    //   body: formData
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //   console.log(data);
+    //   // Handle success or display a success message to the user
+    // })
+    // .catch(error => {
+    //   console.error('Error:', error);
+    //   // Handle errors or display an error message to the user
+    // });
+  });
+  
+
+
+// popup form end
+
+
 
 
 

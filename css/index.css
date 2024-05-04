@@ -706,10 +706,8 @@ footer .design-text {
 /* whatsapp icon start */
 
 .cbh-phone {
-  display: block;
+  /* display: block; */
   position: fixed;
-  /* left: -50px;
-    bottom: -55px; */
   right: -27px;
   bottom: -17px;
   visibility: hidden;
@@ -724,6 +722,16 @@ footer .design-text {
   -moz-transition: visibility 0.5s;
   -o-transition: visibility 0.5s;
   transition: visibility 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-icon .phone-call img {
+  position: absolute;
+  z-index: 1000;
+  bottom: 45%;
+  left: 40%;
 }
 
 .cbh-phone.cbh-show {
@@ -1477,6 +1485,116 @@ footer .design-text {
 
 /* popup start */
 
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+  width: 60%;
+  /* Additional styles */
+}
+
+@media screen and (max-width: 560px) {
+  .popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+}
+
+.popup-form h2.popup-form-heading {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 22px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+@media screen and (max-width: 560px) {
+  .popup-form h2.popup-form-heading {
+    font-family: "Playfair Display", serif;
+    text-align: start;
+    font-size: 32px;
+    margin-bottom: 22px;
+    color: var(--primary);
+    font-weight: 800;
+  }
+}
+
+.popup-form .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 42px;
+  cursor: pointer;
+  background: var(--primary);
+  padding: 8px;
+  color: white;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add smooth animation */
+.popup-form {
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-form form .form-group {
+  margin-bottom: 20px;
+}
+
+.popup-form form label {
+  display: block;
+}
+
+.popup-form form input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.popup-form form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-form form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 /* popup emd */
 
 /* contact start */
@@ -1694,16 +1812,11 @@ main.main-blog-section h2 {
   font-weight: 800;
 }
 .blog-maain-page p {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 26px;
-    color: var(--textColor);
-    font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 26px;
+  color: var(--textColor);
+  font-weight: 500;
 }
-
-
-
-
-
 
 /* blog main page end */

@@ -286,7 +286,9 @@
                   excepturi ad deserunt quas asperiores eaque, est nulla magnam
                   aut illum hic minus velit consectetur porro</span
                 >
-                <button class="button">Book Now</button>
+                <button class="button" onclick="openContactForm()">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -320,7 +322,9 @@
                   excepturi ad deserunt quas asperiores eaque, est nulla magnam
                   aut illum hic minus velit consectetur porro</span
                 >
-                <button class="button">Book Now</button>
+                <button class="button" onclick="openContactForm()">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -356,14 +360,79 @@
                   excepturi ad deserunt quas asperiores eaque, est nulla magnam
                   aut illum hic minus velit consectetur porro</span
                 >
-                <button class="button">Book Now</button>
+                <button class="button" onclick="openContactForm()">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Modal -->
     </section>
+
+    <!-- modal start -->
+    <!-- Popup Contact Form -->
+    <div id="contactForm" class="popup-form">
+      <button class="close-button" onclick="closeContactForm()">&times;</button>
+      <h2 class="popup-form-heading">Contact Form</h2>
+      <form id="contactFormContent">
+        <div class="row row-cols-1 row-cols-md-2 gx-4">
+          <div class="col">
+            <div class="form-group">
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" name="fullName" required />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="selectDate">Select Date:</label>
+              <input type="date" id="selectDate" name="selectDate" required />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="numberOfPersons">Number of Persons:</label>
+              <input
+                type="number"
+                id="numberOfPersons"
+                name="numberOfPersons"
+                required
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="pickupAddress">Pickup Address:</label>
+              <input
+                type="text"
+                id="pickupAddress"
+                name="pickupAddress"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+    <!-- modal end -->
 
     <section class="cta-banner my-5">
       <div class="container">
@@ -385,8 +454,9 @@
                     class="cta-btn"
                     data-aos="fade-up"
                     data-aos-duration="1000"
+                    onclick="window.location.href='contact.html'"
                   >
-                    Call Now
+                    Contact Now
                   </button>
                 </div>
               </div>
@@ -522,7 +592,7 @@
 
     <footer>
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gx-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 gx-4">
           <div class="col text-center">
             <div class="footer-logo">
               <img src="./assets/images/logo-dark.png" alt="logo" />
@@ -551,7 +621,7 @@
               </li>
             </ul>
           </div>
-          <div class="col quick-links text-center">
+          <!-- <div class="col quick-links text-center">
             <h3 class="mb-4">Privacy & Policy</h3>
             <ul>
               <li>
@@ -564,7 +634,7 @@
                 <a href="#">Policy</a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <div class="col quick-links text-center">
             <h3 class="mb-4">Contact Info</h3>
             <ul>
@@ -603,6 +673,12 @@
           class="phone-call cbh-phone cbh-green cbh-show cbh-static"
           id="clbh_phone_div"
         >
+          <img
+            src="./assets/images/whatsapp-white.svg"
+            alt=""
+            width="30px"
+            height="30px"
+          />
           <a
             id="WhatsApp-button"
             href="https://wa.me/03010665799"

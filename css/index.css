@@ -1972,6 +1972,14 @@ textarea::placeholder {
   border-radius: 16px;
   z-index: 99;
 }
+
+@media screen and (max-width: 567px) {
+  .chatbox-popup {
+    right: auto !important;
+    width: 100% !important;
+  }
+}
+
 .chatbox-popup .chatbox-popup__header {
   box-sizing: border-box;
   display: flex;

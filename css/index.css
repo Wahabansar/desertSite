@@ -1970,7 +1970,7 @@ textarea::placeholder {
   height: auto;
   background-color: #fff;
   border-radius: 16px;
-  z-index: 99;
+  z-index: 999;
 }
 
 @media screen and (max-width: 567px) {

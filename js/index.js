@@ -1,17 +1,17 @@
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-items');
-const closeIcon = document.getElementById('close-icon');
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-items");
+const closeIcon = document.getElementById("close-icon");
 
 hamburger.addEventListener("click", () => {
-    navMenu.classList.remove('d-none');
-    hamburger.classList.add('d-none');
-    closeIcon.classList.remove('d-none');
-})
+  navMenu.classList.remove("d-none");
+  hamburger.classList.add("d-none");
+  closeIcon.classList.remove("d-none");
+});
 closeIcon.addEventListener("click", () => {
-    navMenu.classList.add('d-none');
-    hamburger.classList.remove('d-none');
-    closeIcon.classList.add('d-none');
-})
+  navMenu.classList.add("d-none");
+  hamburger.classList.remove("d-none");
+  closeIcon.classList.add("d-none");
+});
 
 // search bar auto type start
 
@@ -20,15 +20,13 @@ const textbox = document.getElementById("textbox");
 let index = 0;
 
 function typePlaceholder() {
-    textbox.setAttribute("placeholder", placeholderText.slice(0, index + 1));
-    index = (index + 1) % placeholderText.length;
+  textbox.setAttribute("placeholder", placeholderText.slice(0, index + 1));
+  index = (index + 1) % placeholderText.length;
 }
 
 setInterval(typePlaceholder, 300); // Typing effect repeats every half-second
 
-
 // search bar auto type end
-
 
 // Swiper Js start
 
@@ -49,20 +47,21 @@ setInterval(typePlaceholder, 300); // Typing effect repeats every half-second
 
 // Swiper Js end
 
-
 // popup form start
 function openContactForm() {
-    // Show the popup contact form with smooth animation
-    document.getElementById("contactForm").style.display = "block";
-  }
-  
-  function closeContactForm() {
-    // Hide the popup contact form with smooth animation
-    document.getElementById("contactForm").style.display = "none";
-  }
-  
-  // Optional: Submit form data using AJAX
-  document.getElementById("contactFormContent").addEventListener("submit", function(event) {
+  // Show the popup contact form with smooth animation
+  document.getElementById("contactForm").style.display = "block";
+}
+
+function closeContactForm() {
+  // Hide the popup contact form with smooth animation
+  document.getElementById("contactForm").style.display = "none";
+}
+
+// Optional: Submit form data using AJAX
+document
+  .getElementById("contactFormContent")
+  .addEventListener("submit", function (event) {
     event.preventDefault();
     // Submit form data using AJAX or perform any other actions here
     // Example AJAX submission:
@@ -81,13 +80,6 @@ function openContactForm() {
     //   // Handle errors or display an error message to the user
     // });
   });
-  
-
 
 // popup form end
 
-
-
-
-
-  

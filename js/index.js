@@ -58,6 +58,10 @@ function closeContactForm() {
   document.getElementById("contactForm").style.display = "none";
 }
 
+
+
+
+
 // Optional: Submit form data using AJAX
 document
   .getElementById("contactFormContent")
@@ -82,4 +86,6 @@ document
   });
 
 // popup form end
+
+
 

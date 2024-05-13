@@ -320,7 +320,8 @@ button {
 }
 
 section.package-cards {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-color: var(--primary);
 }
 
 section.package-cards .pkg-card {
@@ -401,7 +402,7 @@ section.package-cards ul.pkg-desc li span {
   text-align: center;
   font-size: 42px;
   margin-bottom: 22px;
-  color: var(--primary);
+  color: white;
   font-weight: 800;
 }
 
@@ -409,7 +410,7 @@ section.package-cards ul.pkg-desc li span {
   text-align: center;
   font-size: 18px;
   margin-bottom: 26px;
-  color: var(--textColor);
+  color: white;
   font-weight: 500;
 }
 
@@ -1913,6 +1914,7 @@ button.chatbox-open {
   border-radius: 50%;
   cursor: pointer;
   margin: 16px;
+  z-index: 99;
 }
 button.chatbox-close {
   position: fixed;
@@ -1930,6 +1932,7 @@ button.chatbox-close {
   cursor: pointer;
   display: none;
   margin: 16px calc(2 * 16px + 52px) 16px 16px;
+  z-index: 99;
 }
 
 textarea {
@@ -1964,7 +1967,8 @@ textarea::placeholder {
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
   flex-direction: column;
   display: none;
-  bottom: calc(2 * 16px + 52px);
+  /* bottom: calc(2 * 16px + 52px); */
+  bottom: calc(2 * 18px + 89px);
   right: 16px;
   width: 377px;
   height: auto;
@@ -1997,6 +2001,7 @@ textarea::placeholder {
   background-color: var(--primary);
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  font-size: 3rem !important;
 }
 .chatbox-popup .chatbox-popup__main {
   box-sizing: border-box;
@@ -2062,3 +2067,16 @@ textarea::placeholder {
 }
 
 /* live chat end */
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: var(--primary);
+  padding: 1.5rem !important;
+  border-radius: 50%;
+  color: white !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+}

@@ -259,7 +259,7 @@
         </p>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4 gy-4 gx-4">
           <div class="col" data-aos="fade-up" data-aos-duration="1000">
-            <div class="pkg-card">
+            <div class="pkg-card" style="transform: scale(0.9)">
               <img
                 src="./assets/images/card-1.png"
                 alt="card-pkg-1"
@@ -383,7 +383,7 @@
             </div>
           </div>
           <div class="col" data-aos="fade-up" data-aos-duration="1000">
-            <div class="pkg-card">
+            <div class="pkg-card" style="transform: scale(0.9)">
               <img
                 src="./assets/images/card-3.png"
                 alt="card-pkg-1"
@@ -773,7 +773,9 @@
               </a>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -863,12 +865,6 @@
           class="phone-call cbh-phone cbh-green cbh-show cbh-static"
           id="clbh_phone_div"
         >
-          <img
-            src="./assets/images/whatsapp-white.svg"
-            alt=""
-            width="30px"
-            height="30px"
-          />
           <a
             id="WhatsApp-button"
             href="https://wa.me/03010665799"
@@ -879,26 +875,34 @@
             <div class="cbh-ph-circle"></div>
             <div class="cbh-ph-circle-fill"></div>
             <div class="cbh-ph-img-circle1"></div>
+            <img
+              src="./assets/images/whatsapp-white.svg"
+              alt=""
+              width="30px"
+              height="30px"
+            />
           </a>
         </div>
       </div>
       <!-- live chat start -->
-      <button class="chatbox-open">
-        <i class="fa fa-comment fa-2x" aria-hidden="true"></i>
-      </button>
+      <div>
+        <button class="chatbox-open">
+          <i class="fa fa-comment fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
       <button class="chatbox-close">
         <i class="fa fa-close fa-2x" aria-hidden="true"></i>
       </button>
       <section class="chatbox-popup">
         <header class="chatbox-popup__header">
-          <aside style="flex: 3">
+          <aside style="flex: 2">
             <i
               class="fa fa-user-circle fa-4x chatbox-popup__avatar"
               aria-hidden="true"
             ></i>
           </aside>
           <aside style="flex: 8">
-            <h1>Live Chat</h1>
+            <h1 style="font-size: 2rem !important">Live Chat</h1>
           </aside>
         </header>
         <main class="chatbox-popup__main">
@@ -981,15 +985,16 @@
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
-        centeredSlides: false,
+        centeredSlides: true,
         slidesPerView: "auto",
         loop: true,
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

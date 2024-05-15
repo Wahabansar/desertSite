@@ -97,7 +97,7 @@
 
     <div class="contact-info-section">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 gy-5">
+        <div class="row row-cols-1 row-cols-md-2 gy-5">
           <div class="col d-block d-md-flex">
             <div class="contact-box flex-grow-1">
               <div class="contact-box-icon">
@@ -114,17 +114,6 @@
               </div>
               <h4>Phone</h4>
               <a href="@">+98765432133</a>
-            </div>
-          </div>
-          <div class="col d-block d-md-flex">
-            <div class="contact-box flex-grow-1">
-              <div class="contact-box-icon">
-                <img src="./assets/images/icon_address.png" alt="" />
-              </div>
-              <h4>Email</h4>
-              <a href="@"
-                >11580 State Route 44 #1016 Mantua, OH 44255 United States</a
-              >
             </div>
           </div>
         </div>
@@ -145,7 +134,20 @@
             <form>
               <div class="row row-cols-1 row-cols-md-2">
                 <div class="mb-3 col">
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label text-white"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    style="padding: 10px"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="exampleInputEmail1" class="form-label text-white"
                     >Email</label
                   >
                   <input
@@ -155,19 +157,9 @@
                     aria-describedby="emailHelp"
                   />
                 </div>
-                <div class="mb-3 col">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
               </div>
               <div class="mb-3 col">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="exampleInputPassword1" class="form-label text-white"
                   >Meassage</label
                 >
                 <textarea
@@ -272,6 +264,7 @@
         <div
           class="phone-call cbh-phone cbh-green cbh-show cbh-static"
           id="clbh_phone_div"
+          style="right: -27px; left: auto"
         >
           <img
             src="./assets/images/whatsapp-white.svg"

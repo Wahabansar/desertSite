@@ -89,3 +89,18 @@ document
 
 
 
+
+      // Add an event listener for scroll
+      window.addEventListener('scroll', function() {
+        // Get the nav-main-div element
+        const navMainDiv = document.querySelector('.nav-main-div');
+        
+        // Check the scroll position
+        if (window.scrollY > 0) {
+          // Add the 'scrolled' class if scrolled down
+          navMainDiv.classList.add('scrolled');
+        } else {
+          // Remove the 'scrolled' class if at the top
+          navMainDiv.classList.remove('scrolled');
+        }
+      });

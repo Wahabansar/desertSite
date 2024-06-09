@@ -38,7 +38,7 @@
             <div class="nav-links-items d-none d-md-flex">
               <ul class="d-block d-md-flex align-items-center gap-4 gap-lg-5">
                 <li>
-                  <a href="index.html" class="active">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <!-- <li>
                                 <a href="about.html">About Us</a>
@@ -153,6 +153,30 @@
                 <div class="mb-3 col">
                   <label for="exampleInputEmail1" class="form-label text-white"
                     >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label text-white"
+                    >Mobile</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    style="padding: 10px"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="exampleInputEmail1" class="form-label text-white"
+                    >Country/City</label
                   >
                   <input
                     type="email"
@@ -296,20 +320,20 @@
 
     <script src="./js/index.js"></script>
     <script>
-           // Add an event listener for scroll
-           window.addEventListener('scroll', function() {
+      // Add an event listener for scroll
+      window.addEventListener("scroll", function () {
         // Get the nav-main-div element
-        const navMainDiv = document.querySelector('.nav-main-div');
-        
+        const navMainDiv = document.querySelector(".nav-main-div");
+
         // Check the scroll position
         if (window.scrollY > 0) {
           // Add the 'scrolled' class if scrolled down
-          navMainDiv.classList.add('scrolled');
+          navMainDiv.classList.add("scrolled");
         } else {
           // Remove the 'scrolled' class if at the top
-          navMainDiv.classList.remove('scrolled');
+          navMainDiv.classList.remove("scrolled");
         }
-      }); 
+      });
     </script>
   </body>
 </html>
